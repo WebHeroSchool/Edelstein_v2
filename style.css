@@ -1,7 +1,32 @@
 body {
   font-family: helvetica;
+  border: dashed 1px red;
+  margin: 0;
 }
 
-.title{
+.title {
   font-family: 'Roboto', sans-serif;
+}
+
+.menu__item {
+  padding: 0 13px;
+}
+.menu__item:last-child{
+  padding-right: 0;
+}
+.wrapper {
+  margin: auto;
+  width: 80%;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+}
+.logo{
+  padding: 40px 0;
+}
+.menu {
+  display: flex;
+  align-items: center;
 }
