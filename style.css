@@ -53,6 +53,7 @@ body {
 .menu__item:last-child{
   margin-right: 0;
 }
+
 .wrapper {
   margin: auto;
   width: 80%;
@@ -94,7 +95,7 @@ body {
 }
 
 .main{
-  padding: 0 63% 100px 0;
+  padding: 0 63% 150px 0;
   background: top right no-repeat url(img/mainImg.svg);
 }
 
@@ -110,7 +111,7 @@ body {
 }
 .main__button{
   display: inline-block;
-  padding: 14px 24px;
+  padding: 19px 19px;
   background: #0056EC;
   color: #fff;
   font: normal 19px/21px Roboto,arial,helvetica,sans-serif;
@@ -124,4 +125,30 @@ body {
 }
 .main__title-text_highlight{
   background: #ECF3FF;
+}
+
+@media (max-width:768px){
+  .menu {
+    display: none;
+  }
+  .header{
+    margin-bottom: 28px;
+  }
+  .main{
+    text-align: center;
+    padding: 74% 0 0;
+    background-size: 74%;
+    background-position: top center;
+  }
+  .main__title{
+    margin-bottom: 44px;
+    font: bold 30px/39px pt_serif,arial,helvetica,sans-serif;
+  }
+  .main__subtitle{
+    margin-bottom: 25px;
+    font: 500 16px/19px Roboto,arial,helvetica,sans-serif;
+  }
+  .main__button{
+    font: 500 14px/16px Roboto,arial,helvetica,sans-serif;
+  }
 }
