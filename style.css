@@ -15,7 +15,7 @@ body {
 
 .logo {
   position: relative;
-  padding: 40px 0 40px 44px;
+  padding: 39px 0 40px 46px;
   font: bold 26px/31px pt_serif, arial, helvetica, sans-serif;
 }
 
@@ -43,6 +43,7 @@ body {
 .menu {
   display: flex;
   align-items: center;
+  padding-top: 5px;
 }
 
 .menu__item {
@@ -95,7 +96,7 @@ body {
 }
 
 .menu__item:last-child {
-  margin-right: 10px;
+  margin-right: 8px;
 }
 
 .main {
@@ -109,23 +110,27 @@ body {
   margin: 0 0 36px 0;
   padding-top: 70px;
   font: bold 71px/87px pt_serif, arial, helvetica, sans-serif;
+  letter-spacing: 0.01em
 }
 .main__title-text_highlight {
   background: #ECF3FF;
+  background: linear-gradient(#ECF3FF, #ECF3FF) no-repeat;
+  background-position:center;
+  background-size:100% 76%;
 }
 
 .main__subtitle {
   margin: 0 0 41px 0;
-  padding: 0 20% 0 0;
+  padding: 0 20% 0 2px;
   font: normal 22px/27px Roboto, arial, helvetica, sans-serif;
 }
 
 .main__button {
   display: inline-block;
   box-sizing: border-box;
-  width: 270px;
+  width: 271px;
   height: 57px;
-  padding: 14px 25px;
+  padding: 15px 26px;
   background: #0056EC;
   color: #fff;
   font: normal 18px/21px Roboto, arial, helvetica, sans-serif;
@@ -179,17 +184,18 @@ body {
   }
   .menu {
     padding-top: 7px;
-    padding-right: 0;
+    padding-right: 3px;
   }
   .menu__item {
     font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
-    margin-right: 27px;
+    margin-right: 26px;
   }
   .menu__item:last-child {
     margin-right: 1px;
   }
   .main{
-    background-size: 56%;
+    background: top right no-repeat url(img/mainImg1366.svg);
+    /*background-size: 56%;*/
     padding: 0 57% 70px 0;
     margin-bottom: 70px;
     background-position: 101% 5%;
@@ -248,9 +254,12 @@ body {
   }
   .main__title {
     margin-bottom: 42px;
-    padding-top: 22px;
+    padding: 22px 0 0 2px;
     font: bold 50px/64px pt_serif, arial, helvetica, sans-serif;
     letter-spacing: 0.04em;
+  }
+  .main__title-text_highlight {
+    background-size:100% 75%;
   }
   .main__subtitle {
     padding: 0 12% 0 0;
@@ -346,9 +355,15 @@ body {
   .menu__item {
     display: block;
     padding: 13px 100px;
-    transition-duration: .25s;
     font: 500 30px/35px Roboto, arial, helvetica, sans-serif;
+    margin-right: 0;
   }
+  .menu__item:hover::after {
+   content: none;}
+
+   .menu__item:last-child {
+     margin-right: 5px;
+   }
 
   .wrapper {
     width: 87%;
@@ -382,6 +397,6 @@ body {
 
   .main__button {
     font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
-    text-align: center;
+    text-align: justify;
   }
 }
