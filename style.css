@@ -2,6 +2,7 @@ body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
 }
+
 .wrapper {
   margin: auto;
   width: 80%;
@@ -43,24 +44,25 @@ body {
 }
 
 @keyframes color {
-  0% {
-  }
+  0% {}
+
   50% {
     background-color: #88f7e4;
   }
-  100% {
-  }
+
+  100% {}
 }
 
-@keyframes colordark{
-  0% {
-  }
+@keyframes colordark {
+  0% {}
+
   50% {
     background-color: #00AD9F;
   }
-  100% {
-  }
+
+  100% {}
 }
+
 .menu {
   display: flex;
   align-items: center;
@@ -133,11 +135,12 @@ body {
   font: bold 71px/87px pt_serif, arial, helvetica, sans-serif;
   letter-spacing: 0.01em
 }
+
 .main__title-text_highlight {
   background: #ECF3FF;
   background: linear-gradient(#ECF3FF, #ECF3FF) no-repeat;
-  background-position:center;
-  background-size:100% 76%;
+  background-position: center;
+  background-size: 100% 76%;
 }
 
 .main__subtitle {
@@ -157,26 +160,23 @@ body {
   font: normal 18px/21px Roboto, arial, helvetica, sans-serif;
   text-decoration: none;
   border-radius: 4px;
-  /*transition: opacity .5s;*/
 }
 
-/*.main__button:hover {
-  opacity: .5;
-}*/
-
 .main__button:hover {
-  animation: pulse 1s ease-in-out;
+  animation: pulse 2s ease-in-out;
 }
 
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 0 0 rgba(0,86,236, 0.4);
+    box-shadow: 0 0 0 0 rgba(0, 86, 236, 0.4);
   }
+
   70% {
-      box-shadow: 0 0 0 10px rgba(0,86,236, 0);
+    box-shadow: 0 0 0 10px rgba(0, 86, 236, 0);
   }
+
   100% {
-      box-shadow: 0 0 0 0 rgba(0,86,236, 0);
+    box-shadow: 0 0 0 0 rgba(0, 86, 236, 0);
   }
 }
 
@@ -198,41 +198,47 @@ body {
   display: none;
 }
 
-@media screen and (max-width: 1910px) and (min-width: 1365px){
+@media screen and (max-width: 1910px) and (min-width: 1365px) {
   .wrapper {
     max-width: 1300px;
   }
-  .main__title{
+
+  .main__title {
     font: bold 55px/74px pt_serif, arial, helvetica, sans-serif;
   }
-  .main{
+
+  .main {
     padding: 0 63% 80px 0;
     background-size: 55%;
     margin-bottom: 80px;
-    }
+  }
 }
 
 @media (max-width: 1366px) {
   .wrapper {
     width: 68%;
   }
+
   .header {
     margin-bottom: 80px;
   }
+
   .menu {
     padding-top: 7px;
     padding-right: 3px;
   }
+
   .menu__item {
     font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
     margin-right: 26px;
   }
+
   .menu__item:last-child {
     margin-right: 1px;
   }
-  .main{
+
+  .main {
     background: top right no-repeat url(img/mainImg1366.svg);
-    /*background-size: 56%;*/
     padding: 0 57% 70px 0;
     margin-bottom: 70px;
     background-position: 101% 5%;
@@ -250,6 +256,7 @@ body {
     font: normal 18px/21px Roboto, arial, helvetica, sans-serif;
     letter-spacing: 0.01em;
   }
+
   .main__button {
     width: 209px;
     height: 44px;
@@ -258,7 +265,7 @@ body {
   }
 }
 
-@media screen and (max-width: 1365px) and (min-width: 1025px){
+@media screen and (max-width: 1365px) and (min-width: 1025px) {
   .wrapper {
     min-width: 950px;
   }
@@ -266,53 +273,64 @@ body {
 
 @media (max-width:1024px) {
   .wrapper {
-    margin:auto;
+    margin: auto;
     width: 91%;
   }
+
   .header {
     margin-bottom: 80px;
   }
+
   .menu {
     padding-top: 8px;
     padding-right: 0;
   }
+
   .menu__item {
     font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
     margin-right: 26px;
   }
+
   .menu__item:last-child {
     margin-right: 1px;
   }
+
   .main {
     background-size: 56%;
     padding: 0 57% 70px 0;
     margin-bottom: 68px;
     background-position: 101% 5%;
   }
+
   .main__title {
     margin-bottom: 42px;
     padding: 22px 0 0 2px;
     font: bold 50px/64px pt_serif, arial, helvetica, sans-serif;
     letter-spacing: 0.04em;
   }
+
   .main__title-text_highlight {
-    background-size:100% 75%;
+    background-size: 100% 75%;
   }
+
   .main__subtitle {
     padding: 0 12% 0 0;
     font: 500 18px/21px Roboto, arial, helvetica, sans-serif;
     letter-spacing: 0.01em;
   }
 }
-@media screen and (max-width: 1019px) and (min-width: 768px){
+
+@media screen and (max-width: 1019px) and (min-width: 768px) {
   .main__title {
     font: bold 40px/54px pt_serif, arial, helvetica, sans-serif;
   }
 }
+
 @media (max-width:768px) {
   .menu, .logo__name, .footer {
     display: none;
   }
+
   .hamburger-menu {
     display: block;
   }
@@ -395,12 +413,14 @@ body {
     font: 500 30px/35px Roboto, arial, helvetica, sans-serif;
     margin-right: 0;
   }
-  .menu__item:hover::after {
-   content: none;}
 
-   .menu__item:last-child {
-     margin-right: 5px;
-   }
+  .menu__item:hover::after {
+    content: none;
+  }
+
+  .menu__item:last-child {
+    margin-right: 5px;
+  }
 
   .wrapper {
     width: 87%;
