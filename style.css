@@ -34,12 +34,33 @@ body {
   left: 8px;
   top: 56%;
   background: #C8DBFB;
+  animation: color 3s infinite ease-in-out;
 }
 
 .logo__circle_color_dark-blue {
   background: #0056EC;
+  animation: colordark 3s infinite ease-in-out;
 }
 
+@keyframes color {
+  0% {
+  }
+  50% {
+    background-color: #88f7e4;
+  }
+  100% {
+  }
+}
+
+@keyframes colordark{
+  0% {
+  }
+  50% {
+    background-color: #00AD9F;
+  }
+  100% {
+  }
+}
 .menu {
   display: flex;
   align-items: center;
@@ -136,11 +157,27 @@ body {
   font: normal 18px/21px Roboto, arial, helvetica, sans-serif;
   text-decoration: none;
   border-radius: 4px;
-  transition: opacity .5s;
+  /*transition: opacity .5s;*/
 }
 
-.main__button:hover {
+/*.main__button:hover {
   opacity: .5;
+}*/
+
+.main__button:hover {
+  animation: pulse 1s ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0,86,236, 0.4);
+  }
+  70% {
+      box-shadow: 0 0 0 10px rgba(0,86,236, 0);
+  }
+  100% {
+      box-shadow: 0 0 0 0 rgba(0,86,236, 0);
+  }
 }
 
 .footer {
